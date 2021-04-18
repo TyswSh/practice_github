@@ -1,6 +1,6 @@
 # practice_github_and_python
 * Githubを練習するためのリポジトリ
-  * Githubを使い慣れている人は教えてください(by S.T.)
+  * Githubを使い慣れている人は教えてください
   * 管理している人も初心者なので
 * 特に理由はないがpythonの練習にも
 * 詰まったところを検索してこのREADME.mdに追記
