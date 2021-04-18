@@ -62,5 +62,8 @@ commitはタスクを終えたら
 * バグの修正
 * 
 pushはcommitしたらすぐに  
-ただし，pushしたらすぐにマージされるわけではないので気を付ける
-また，他の人がpush(変更)した場合はfetch()
+ただし，pushしたらすぐにマージされるわけではないので気を付ける  
+また，他の人がpush(変更)した場合はfetch  
+$ git fetch  
+$ git branch  
+$ git merge develop
