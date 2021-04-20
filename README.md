@@ -52,6 +52,7 @@ $ git push origin develop
 $ git branch
 * branchの変更  
 $ git branch branch_name  
+  注意) branch_nameを既に作っていたら飛ばす
 $ git checkout branch_name  
   注意) mainではなくdevelopを作成してそこで変更を加えていく  
 
@@ -60,7 +61,8 @@ addはこまめに
 commitはタスクを終えたら  
 * 新しく関数を追加
 * バグの修正
-* 
+* 修正や使用の変更  
+
 pushはcommitしたらすぐに  
 ただし，pushしたらすぐにマージされるわけではないので気を付ける  
 また，他の人がpush(変更)した場合はfetch  
