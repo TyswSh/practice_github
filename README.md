@@ -52,7 +52,7 @@ $ git push origin develop
 $ git branch
 * branchの変更  
 $ git branch branch_name  
-  注意) branch_nameを既に作っていたら飛ばす
+  注意) branch_nameを既に作っていたら飛ばす  
 $ git checkout branch_name  
   注意) mainではなくdevelopを作成してそこで変更を加えていく  
 
