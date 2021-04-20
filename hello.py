@@ -5,11 +5,16 @@ def fizz_buzz():
         print(i)
 
 
-def main():
+def even():
     a = [int(i) for i in range(100)]
     even = filter(lambda x: x % 2 == 0, a)
     for i in even:
         print(i)
+
+
+def main():
+    even()
+    fizz_buzz()
 
 
 if __name__ == '__main__':
