@@ -1,4 +1,4 @@
-# practice_github_and_python
+# Practice Github
 * Githubを練習するためのリポジトリ
   * Githubを使い慣れている人は教えてください
   * 管理している人も初心者なので
@@ -6,7 +6,7 @@
 * 詰まったところを検索してこのREADME.mdに追記
   * エラーの内容などを書いてどうやって解決したかを記述
   * 検索して参考にしたURLなどなど
-* pythonのファイルなども追加しても良い
+* pythonや別の言語のファイルなども追加しても良い
   * hello.pyに新しい関数の追加
   * 新しく.pyのもしくは.ipynbなどのファイルを追加
 * mainのbranchではなく**develop**のbranchにpush
