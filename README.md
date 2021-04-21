@@ -38,21 +38,21 @@ $ cd practice_github_and_python
 
 ## Gitの使い方
 参考) URL:https://qiita.com/nnahito/items/565f8755e70c51532459
-### 1.Gitの設定
-参考) https://qiita.com/tetsu-upstr/items/e72147250701cf30ee72
+### Gitの設定
+参考) https://qiita.com/tetsu-upstr/items/e72147250701cf30ee72  
 Gitなどはターミナル(git bashなど)から基本的に実行  
 global設定  
 * 改行設定  
 $ git config --global core.autocrlf false  
-* ユーザー設定
+* ユーザー設定  
 $ git config --global user.name "John Doe"
-* メール設定
+* メール設定  
 $ git config --global user.email johndoe@example.com
 
-## 2.ssh keyの生成とGithubへの登録
+## ssh keyの生成とGithubへの登録
 ターミナルからGithubにアクセス可能に  
 よくあるミスでssh keyの設定をし忘れる，または上手く登録できない場合がある  
-### 2.1ターミナルからssh keyの生成  
+### ターミナルからssh keyの生成  
 home もしくは c\users\user_name\へ移動  
 $ cd  
 .sshに移動  
@@ -70,7 +70,7 @@ ssh keyの生成完了
 * id_rsa.pub は誰かに教えても大丈夫  
 * d_rsa は絶対誰にも教えてはいけない  
 
-### 2.3 公開鍵をGithubへ登録
+### 公開鍵をGithubへ登録
 テキストエディタで~/.sshのid_ras.pubを開きコピー  
 [github](https://github.com/)のsettingsへ移動
 SSH and GPG keysへ移動  
