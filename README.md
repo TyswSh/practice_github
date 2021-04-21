@@ -76,7 +76,11 @@ ssh keyの生成完了
 SSH and GPG keysへ移動  
 SSH keysのNew SSH keyをクリック  
 titleは自分のパソコンからと分かるようにして，コピーしたのをKeyへペースト
-
+ターミナルを利用して接続確認  
+$ ssh -T git@github.com  
+Hi (account名)! You've successfully authenticated, but GitHub does not provide shell access.  
+これが返ってきたら成功  
+エラーが出たら公開鍵の生成で変な引数を入れている可能性があるので，もう一回やってみる
 ### .originの設定
 $ git remote add origin repo_URL  
 ex) git  remote add origin https://github.com/TyswSh/practice_github_and_python.git
