@@ -58,7 +58,7 @@ $ cd
 .sshに移動  
 $ cd ~/.ssh  
 もしcd ~/.sshがエラーが出たら  
-$ mkdir ~/.ssh
+$ mkdir ~/.ssh  
 秘密鍵と公開鍵の生成  
 参考) https://qiita.com/suthio/items/2760e4cff0e185fe2db9  
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"  
