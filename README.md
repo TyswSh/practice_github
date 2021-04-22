@@ -38,10 +38,53 @@ $ cd practice_github_and_python
 
 ## Gitの使い方
 参考) URL:https://qiita.com/nnahito/items/565f8755e70c51532459
-### 1.originの設定
+### Gitの設定
+参考) https://qiita.com/tetsu-upstr/items/e72147250701cf30ee72  
+Gitなどはターミナル(git bashなど)から基本的に実行  
+global設定  
+* 改行設定  
+$ git config --global core.autocrlf false  
+* ユーザー設定  
+$ git config --global user.name "John Doe"
+* メール設定  
+$ git config --global user.email johndoe@example.com
+
+## ssh keyの生成とGithubへの登録
+ターミナルからGithubにアクセス可能に  
+よくあるミスでssh keyの設定をし忘れる，または上手く登録できない場合がある  
+### ターミナルからssh keyの生成  
+home もしくは c\users\user_name\へ移動  
+$ cd  
+.sshに移動  
+$ cd ~/.ssh  
+もしcd ~/.sshがエラーが出たら  
+$ mkdir ~/.ssh  
+秘密鍵と公開鍵の生成  
+参考) https://qiita.com/suthio/items/2760e4cff0e185fe2db9  
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"  
+いろいろ聞かれるが基本的に変更を加えたくなければそのままエンター  
+パスフレーズを入力  
+$ Enter passphrase (empty for no passphrase): passphrase  
+ssh keyの生成完了  
+念のためにlsもしくはdirでid_ras.pubとid_rsaの確認
+* id_rsa.pub は誰かに教えても大丈夫  
+* d_rsa は絶対誰にも教えてはいけない  
+
+### 公開鍵をGithubへ登録
+テキストエディタで~/.sshのid_ras.pubを開きコピー  
+[github](https://github.com/)のsettingsへ移動
+SSH and GPG keysへ移動  
+SSH keysのNew SSH keyをクリック  
+titleは自分のパソコンからと分かるようにして，コピーしたのをKeyへペースト
+ターミナルを利用して接続確認  
+$ ssh -T git@github.com  
+Hi (account名)! You've successfully authenticated, but GitHub does not provide shell access.  
+これが返ってきたら成功  
+エラーが出たら公開鍵の生成で変な引数を入れている可能性があるので，もう一回やってみる
+### .originの設定
 $ git remote add origin repo_URL  
 ex) git  remote add origin https://github.com/TyswSh/practice_github_and_python.git
-### 2.基本は**add/commit/push**の3つを利用
+### .基本は**add/commit/push**の3つを利用
 $ git add file_name  
 $ git commit -m "Explanatory text"  
 $ git push origin develop  
@@ -50,7 +93,7 @@ $ git push origin develop
 $ git add .
 
 この3つがこの先何度も打ち込むコマンド
-### 3.branchの変更
+### .branchの変更
 * 今いるbranch  
 $ git branch
 * branchの変更  
