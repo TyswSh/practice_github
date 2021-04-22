@@ -80,4 +80,4 @@ $ git merge develop
 $ git pull  
 これを使うと、fetchとmergeを勝手にやってくれます
 
-<span style="font-size: 200%; color: red;">ところで研究しました？？？？？？</span>
+## **と　こ　ろ　で　研　究　し　ま　し　た　？？？？？？**
