@@ -46,6 +46,9 @@ $ git add file_name
 $ git commit -m "Explanatory text"  
 $ git push origin develop  
 
+※以下のように指定すると、全ファイルをaddする事ができる  
+$ git add .
+
 この3つがこの先何度も打ち込むコマンド
 ### 3.branchの変更
 * 今いるbranch  
@@ -63,9 +66,18 @@ commitはタスクを終えたら
 * バグの修正
 * 修正や使用の変更  
 
+※statusというコマンドを使うと、addやcommitをしていないファイルを一覧で出すことができる  
+$ git status
+
 pushはcommitしたらすぐに  
 ただし，pushしたらすぐにマージされるわけではないので気を付ける  
 また，他の人がpush(変更)した場合はfetch  
 $ git fetch  
 $ git branch  
 $ git merge develop
+
+上記のコマンドをまとめたpullというコマンドがあるのでこれを使うと便利です。  
+$ git pull  
+これを使うと、fetchとmergeを勝手にやってくれます
+
+## **と　こ　ろ　で　研　究　し　ま　し　た　？？？？？？**
