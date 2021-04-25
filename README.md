@@ -50,14 +50,14 @@ $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 
 ## ssh keyの生成とGithubへの登録
-ターミナルからGithubにアクセス可能に  
+ターミナルからGithubにアクセス可能へ  
 よくあるミスでssh keyの設定をし忘れる，または上手く登録できない場合がある  
 ### ターミナルからssh keyの生成  
 home もしくは c\users\user_name\へ移動  
 $ cd  
 .sshに移動  
 $ cd ~/.ssh  
-もしcd ~/.sshがエラーが出たら  
+もしcd ~/.sshにエラーが出たら  
 $ mkdir ~/.ssh  
 秘密鍵と公開鍵の生成  
 参考) https://qiita.com/suthio/items/2760e4cff0e185fe2db9  
@@ -81,7 +81,7 @@ $ ssh -T git@github.com
 Hi (account名)! You've successfully authenticated, but GitHub does not provide shell access.  
 これが返ってきたら成功  
 エラーが出たら公開鍵の生成で変な引数を入れている可能性があるので，もう一回やってみる
-### .originの設定
+### originの設定
 $ git remote add origin repo_URL  
 ex) git  remote add origin https://github.com/TyswSh/practice_github_and_python.git
 ### .基本は**add/commit/push**の3つを利用
