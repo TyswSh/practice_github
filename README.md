@@ -102,7 +102,7 @@ $ git branch branch_name
 $ git checkout branch_name  
   注意) mainではなくdevelopを作成してそこで変更を加えていく  
 
-### 変更を加えて2をひたすら回す
+### 変更を加えてadd/commit/pushを
 addはこまめに  
 commitはタスクを終えたら  
 * 新しく関数を追加
@@ -112,12 +112,11 @@ commitはタスクを終えたら
 ※statusというコマンドを使うと、addやcommitをしていないファイルを一覧で出すことができる  
 $ git status
 
-pushはcommitしたらすぐに  
+pushはcommitしたら基本的にpushする  
 ただし，pushしたらすぐにマージされるわけではないので気を付ける  
 また，他の人がpush(変更)した場合はfetch  
 $ git fetch  
-$ git branch  
-$ git merge develop
+$ git merge develop  
 
 上記のコマンドをまとめたpullというコマンドがあるのでこれを使うと便利です。  
 $ git pull  
