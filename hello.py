@@ -1,3 +1,10 @@
+def square_inequality():
+    a, b, c = map(int, input().split())
+    if a*a + b*b < c*c:
+        print("Yes")
+    else:
+        print("No")
+
 def fizz_buzz():
     result = ("FizzBuzz" if i % 15 == 0 else "fizz" if i %
               3 == 0 else "Buzz" if i % 5 == 0 else i for i in range(100))
@@ -13,8 +20,9 @@ def even():
 
 
 def main():
-    even()
-    fizz_buzz()
+    # even()
+    # fizz_buzz()
+    square_inequality()
 
 
 if __name__ == '__main__':
