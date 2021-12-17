@@ -68,7 +68,7 @@ $ Enter passphrase (empty for no passphrase): passphrase
 ssh keyの生成完了  
 念のためにlsもしくはdirでid_ras.pubとid_rsaの確認
 * id_rsa.pub は誰かに教えても大丈夫  
-* d_rsa は絶対誰にも教えてはいけない  
+* id_rsa は絶対誰にも教えてはいけない  
 
 ### 公開鍵をGithubへ登録
 テキストエディタで~/.sshのid_ras.pubを開きコピー  
@@ -81,9 +81,11 @@ $ ssh -T git@github.com
 Hi (account名)! You've successfully authenticated, but GitHub does not provide shell access.  
 これが返ってきたら成功  
 エラーが出たら公開鍵の生成で変な引数を入れている可能性があるので，もう一回やってみる
+
 ### originの設定
 $ git remote add origin repo_URL  
 ex) git  remote add origin https://github.com/TyswSh/practice_github_and_python.git
+
 ### .基本は**add/commit/push**の3つを利用
 $ git add file_name  
 $ git commit -m "Explanatory text"  
@@ -93,7 +95,7 @@ $ git push origin develop
 $ git add .
 
 この3つがこの先何度も打ち込むコマンド
-### .branchの変更
+### branchの変更
 * 今いるbranch  
 $ git branch
 * branchの変更  
